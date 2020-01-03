@@ -1,6 +1,5 @@
 """
-src/network/dandelion.py
-========================
+Dandelion class definition, tracks stages
 """
 import logging
 from collections import namedtuple
@@ -28,7 +27,7 @@ logger = logging.getLogger('default')
 
 
 @Singleton
-class Dandelion():      # pylint: disable=old-style-class
+class Dandelion():  # pylint: disable=old-style-class
     """Dandelion class for tracking stem/fluff stages."""
     def __init__(self):
         # currently assignable child stems

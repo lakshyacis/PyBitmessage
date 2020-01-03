@@ -1,8 +1,6 @@
 """
-src/network/announcethread.py
-=================================
+Announce myself (node address)
 """
-
 import time
 
 import state
