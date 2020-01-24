@@ -9,7 +9,6 @@ from struct import pack, unpack
 
 from debug import logger
 
-
 ALPHABET = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
 
 
