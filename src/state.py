@@ -54,4 +54,6 @@ testmode = False
 
 kivy = False
 
+qttesting = False
+
 association = ''

@@ -128,6 +128,14 @@ class NewAddressDialog(QtGui.QDialog, RetranslateMixin):
         self.groupBoxDeterministic.setHidden(True)
         QtGui.QWidget.resize(self, QtGui.QWidget.sizeHint(self))
         self.show()
+        import state
+        if state.qttesting:
+            import qttest
+            from PyQt4.QtCore import Qt
+            from PyQt4.QtTest import QTest
+            self.newaddresslabel.setText(qttest.Testing().address_autofill())
+            qttest.Testing().sleeper()
+            self.accept()
 
     def accept(self):
         """accept callback"""

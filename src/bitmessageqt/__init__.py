@@ -4160,4 +4160,9 @@ def run():
     if not BMConfigParser().getboolean('bitmessagesettings', 'startintray'):
         myapp.show()
 
+    if state.qttesting:
+        import qttest
+        qttest.Testing().label_generation(myapp)
+        qttest.Testing().senf_functionality(myapp)
+
     sys.exit(app.exec_())
